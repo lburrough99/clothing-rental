@@ -1,22 +1,18 @@
 import Image from "next/image";
+import SignUpModal from "./signupPopup";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen bg-zinc-50 font-sans bg-stone-50">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-stone-50 sm:items-start">
-        <Image
-          src="/logo.png"
-          alt="Next.js logo"
-          width={500}
-          height={500}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black">
-            Coming Soon
-          </h1>
-        </div>
-      </main>
+    <div>
+      <SignUpModal/>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {Array.from({ length: 3 }).map((_, i) => (
+          <div key={i} className="bg-white rounded-lg shadow p-4 h-48 flex items-center justify-center text-black">
+            Placeholder {i + 1}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
+
