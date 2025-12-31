@@ -7,8 +7,8 @@ export default function Home() {
         <Image
           src="/logo.png"
           alt="Next.js logo"
-          width={700}
-          height={700}
+          width={800}
+          height={800}
           priority
         />
         <div className="flex flex-col items-center gap-6">
