@@ -8,9 +8,10 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: "Ekushey Punarbhaba", sans-serif;
   --font-mono: var(--font-geist-mono);
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -22,5 +23,23 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
+
+@font-face {
+  font-family: "Ekushey Punarbhaba";
+  src: url("/fonts/Punarbhaba_27-02-2006.ttf") format("truetype"),
+       url("/fonts/Punarbhaba_Bold-04-09-2012.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ekushey Punarbhaba";
+  src: url("/fonts/Punarbhaba_27-02-2006.ttf") format("truetype"),
+       url("/fonts/Punarbhaba_Bold-04-09-2012.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+

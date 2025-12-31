@@ -1,22 +1,23 @@
 import Image from "next/image";
+import Container from "@/components/containter";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen bg-zinc-50 bg-[#fbfcf7]">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-[#fbfcf7] sm:items-start">
-        <Image
-          src="/logo.png"
-          alt="Next.js logo"
-          width={800}
-          height={800}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6">
-          <h1 className="${sourceSans.variable} text-[#960404] text-3xl">
+    <div className="min-h-screen bg-[#fbfcf7] flex items-center justify-center">
+      <Container>
+        <div className="flex flex-col items-center justify-center min-h-screen gap-6">
+          <Image
+            src="/logo.png"
+            alt="Company logo"
+            width={300}
+            height={300}
+            priority
+          />
+          <h1 className="font-ekushey text-[#960404] text-4xl md:text-6xl">
             COMING SOON
           </h1>
         </div>
-      </main>
+      </Container>
     </div>
   );
 }
